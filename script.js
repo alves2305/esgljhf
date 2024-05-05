@@ -2,7 +2,7 @@ function conferir() {
     let input = document.getElementById('input').value.trim().toUpperCase(); // Adicionando trim() para remover espaços em branco extras
     let imagem = document.getElementById('imagem');
     let contain = document.getElementById('contain3');
-    let titulo = document.getElementById('titulo'); 
+    let titulo = document.getElementById('titulo');
 
     if (!input) {
         alert("Por favor, insira um nome de pet válido.");
@@ -21,7 +21,14 @@ function conferir() {
         imagem.style.backgroundImage = 'url("./tchala.png")';
         contain.style.display = 'none';
         titulo.textContent = 'Temeroso rei T\'Challa, o homem é brabo, mas está próximo de perder seu reinado';
-    } else {
+    } 
+    else if (input === 'NAKIA') {
+        imagem.style.backgroundImage = 'url("./nakia.png")';
+        contain.style.display = 'none';
+        titulo.textContent = 'Tímida, medrosa e com problemas de interação social. Nossa adolescente que fica trancada o dia todo no quarto assistindo dorama e anime';
+    } 
+    else {
         alert("Nome de pet não reconhecido.");
     }
 }
+

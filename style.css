@@ -41,7 +41,7 @@ body {
     border: none;
     font-size: 17px;
     font-weight: 700;
-    font-family: "Exo 2", sans-serif;;
+    font-family: "Exo 2", sans-serif;
     
 }
 .contain3__section2 button {
@@ -63,4 +63,12 @@ body {
 
 .teste{
     display: none;
+}
+
+.butao {
+    border-radius: 30px;
+    height: 40px;
+    width: 80px;
+    border: none;
+   
 }
