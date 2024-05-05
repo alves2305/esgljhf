@@ -30,5 +30,23 @@ function conferir() {
     else {
         alert("Nome de pet não reconhecido.");
     }
+
+
 }
+
+function voltar() {
+    let testeF = document.getElementById("contain3");
+    let imagem = document.getElementById('imagem');
+    let voltar = document.getElementById('div-voltar');
+    let titulo = document.getElementById('titulo');
+
+    // Removendo a imagem e ajustando o texto do título
+    imagem.style.backgroundImage = 'none';
+    titulo.textContent = 'Caracteristicas dos nossos pets';
+
+    // Mostrando novamente o container e removendo a classe "teste" do botão voltar
+    testeF.style.display = 'block';
+    voltar.classList.remove("teste");
+}
+
 
